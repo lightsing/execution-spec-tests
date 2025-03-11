@@ -6,6 +6,7 @@ from .clis.evmone import EvmoneExceptionMapper, EvmOneTransitionTool
 from .clis.execution_specs import ExecutionSpecsTransitionTool
 from .clis.geth import GethFixtureConsumer, GethTransitionTool
 from .clis.nimbus import NimbusTransitionTool
+from .clis.scroll import ScrollOpenVMTransitionTool
 from .ethereum_cli import CLINotFoundInPathError, UnknownCLIError
 from .fixture_consumer_tool import FixtureConsumerTool
 from .transition_tool import TransitionTool
@@ -25,6 +26,7 @@ __all__ = (
     "GethFixtureConsumer",
     "GethTransitionTool",
     "NimbusTransitionTool",
+    "ScrollOpenVMTransitionTool",
     "Result",
     "TransitionTool",
     "TransitionToolOutput",

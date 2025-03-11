@@ -384,6 +384,7 @@ class TransitionTool(EthereumCLI):
         args = self.construct_args_stream(t8n_data, temp_dir)
 
         stdin = t8n_data.to_input()
+        print(stdin.model_dump_json(**model_dump_config))
 
         result = subprocess.run(
             args,
